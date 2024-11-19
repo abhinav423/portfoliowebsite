@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Desktop Navigation -->
+    <nav id="desktop-nav">
+      <div class="logo">Abhinav Reddy</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hamburger Navigation -->
+    <nav id="hamburger-nav">
+      <div class="logo">Abhinav Reddy</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <script src="script.js"></script>
+    <section id="home">
+      <div class="section__pic-container">
+        <img src="./assets/profilepic.png" alt="Abhinav Reddy profile picture" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">ABHINAV REDDY DEVIDI</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/abhiresume.pdf')"
+          >
+            RESUME
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn"
+            class="icon"
+            onclick="location.href='http://www.linkedin.com/in/abhinav-reddy-devidi-b38092337'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub"
+            class="icon"
+            onclick="location.href='https://github.com/abhinav423'"
+          />
+          <img
+            src="./assets/gmail.png"
+            alt="Gmail"
+            class="icon"
+            onclick="location.href='mailto:abhinavreddydevidi2@gmail.com'"
+          />
+          <img
+            src="./assets/phone.png"
+            alt="Phone"
+            class="icon"
+            onclick="location.href='tel:+15618843688'"
+          />
+          <img
+            src="./assets/fb.png"
+            alt="Facebook"
+            class="icon"
+            onclick="location.href='https://www.facebook.com/profile.php?id=61565185905344'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/abhinav.reddi?igsh=Mm12YXBia24yaW4z'"
+          />
+          <img
+            src="./assets/TWITTERX.png"
+            alt="twitter"
+            class="icon"
+            onclick="location.href='https://x.com/abhinav_reddi_'"
+          />
+        </div>
+        <div class="text-box">
+          <p class="section__text__p1">
+            Master’s student in Computer Science with expertise in Full-Stack Development, Data Science, and Cloud Computing. Seeking an opportunity to apply technical skills, collaborate on IT projects, and tackle real-world challenges. Passionate about driving innovative solutions and growing as a well-rounded professional in technology.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="education">
+      <h1 class="title">EDUCATION</h1>
+      <div class="education-container">
+        <!-- First Institution -->
+        <div class="education-card">
+          <img src="./assets/fau.png" alt="Florida Atlantic University Logo" class="education-logo" />
+          <div class="education-details">
+            <h3>FLORIDA ATLANTIC UNIVERSITY</h3>
+            <p class="education-period">2023-2025</p>
+            <p class="education-degree">Masters in Computer Science</p>
+            <ul class="education-description">
+              <li> Mastered courses in AI, ML, Deep Learning, and Full-Stack Development.</li>
+              <li> Built hands-on projects in ML, DL, and Cloud Computing, applying theoretical knowledge to practical solutions.</li>
+              <li> Fostered strong relationships with professors and peers, enhancing academic and technical pursuits.</li>
+            </ul>
+          </div>
+        </div>
+    
+        <!-- Second Institution -->
+        <div class="education-card">
+          <img src="./assets/prist.png" alt="PRIST University Logo" class="education-logo" />
+          <div class="education-details">
+            <h3>PRIST UNIVERSITY</h3>
+            <p class="education-period">2018-2022</p>
+            <p class="education-degree">Bachelors in Computer Science</p>
+            <ul class="education-description">
+              <li> Mastered programming languages such as C, C++, Java, Python, and SQL.</li>
+              <li> Acquired in-depth knowledge of coding standards through academia and hands-on projects.</li>
+              <li> Built and deployed real-world solutions, showcasing proficiency in programming and development.</li>
+              <li> Actively volunteered in tech events, fostering collaboration among peers.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="skills">
+      <h1 class="skills-title">SKILLS</h1>
+      <div class="skills-container">
+        <div class="skill">
+          <img src="./assets/c.png" alt="Check icon" class="check-icon" />
+          <p>C</p>
+          <span>Advance</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/c++.png" alt="Check icon" class="check-icon" />
+          <p>C++</p>
+          <span>Advance</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/python.png" alt="Check icon" class="check-icon" />
+          <p>PYTHON</p>
+          <span>Advance</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/java.png" alt="Check icon" class="check-icon" />
+          <p>JAVA</p>
+          <span>Advance</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/PHP.png" alt="Check icon" class="check-icon" />
+          <p>PHP</p>
+          <span>Intermediate</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/sql.png" alt="Check icon" class="check-icon" />
+          <p>SQL</p>
+          <span>Advance</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/HTML5.png" alt="Check icon" class="check-icon" />
+          <p>HTML</p>
+          <span>Advance</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/CSS3.png" alt="Check icon" class="check-icon" />
+          <p>CSS</p>
+          <span>Advance</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/csharp.webp" alt="Check icon" class="check-icon" />
+          <p>C#</p>
+          <span>Beginner</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/ruby.png" alt="Check icon" class="check-icon" />
+          <p>RUBY</p>
+          <span>Beginner</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/kotlin.png" alt="Check icon" class="check-icon" />
+          <p>KOTLIN</p>
+          <span>Beginner</span>
+        </div>
+        <div class="skill">
+          <img src="./assets/swift.png" alt="Check icon" class="check-icon" />
+          <p>SWIFT</p>
+          <span>Beginner</span>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="data-science">
+      <h1 class="section-title">DATA SCIENCE</h1>
+      <div class="skills-cloud">
+        <span>Machine Learning</span>
+        <span>Deep Learning</span>
+        <span>Natural Language Processing</span>
+        <span>Statistical Analysis</span>
+        <span>Data Visualization</span>
+        <span>Big Data Processing</span>
+        <span>Deployment and Monitoring</span>
+        <span>Exploratory Data Analysis (EDA)</span>
+        <span>Model Building and Evaluation</span>
+        <span>Cloud Computing For Data Science</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Scikit-learn</span>
+        <span>TensorFlow/Keras</span>
+        <span>Matplotlib</span>
+        <span>Seaborn</span>
+        <span>PyTorch</span>
+        <span>Power BI</span>
+        <span>Regression (Linear, Logistic)</span>
+        <span>Clustering</span>
+        <span>Probability and Distributions</span>
+        <span>Descriptive and Inferential Statistics</span>
+        <span>Linear Algebra</span>
+        <span>Bayesian Inference</span>
+        <span>Neural Networks</span>
+        <span>Convolutional Neural Networks (CNNs)</span>
+        <span>Recurrent Neural Networks (RNNs)</span>
+        <span>Reinforcement Learning</span>
+        <span>Big Data Technologies</span>
+        <span>Hadoop</span>
+        <span>Spark</span>
+        <span>Cloud-Based Data Science</span>
+      </div>
+      <div class="description">
+        <p>
+          I start with <strong>Exploratory Data Analysis (EDA)</strong> using tools like <strong>Pandas</strong>, <strong>NumPy</strong>, <strong>Matplotlib</strong>, and <strong>Seaborn</strong> to clean, analyze, and visualize data, uncovering critical patterns and trends. For modeling, I use <strong>scikit-learn</strong> for machine learning algorithms (e.g., regression, clustering) and frameworks like <strong>TensorFlow</strong>, <strong>Keras</strong>, and <strong>PyTorch</strong> for deep learning, tackling tasks with <strong>Neural Networks</strong>, <strong>CNNs</strong>, <strong>RNNs</strong>, and <strong>Reinforcement Learning</strong>. I also apply <strong>NLP techniques</strong> for text-based projects like sentiment analysis and chatbots.
+        </p>
+        <p>
+          To handle large datasets, I leverage <strong>Big Data Technologies</strong> like <strong>Hadoop</strong> and <strong>Spark</strong>, ensuring efficient processing. I deploy models on <strong>Cloud Computing platforms</strong> such as AWS and Google Cloud, enabling scalable data pipelines, seamless training, and real-time deployment. This ensures my solutions are robust, scalable, and accessible.
+        </p>
+        <p>
+          My projects integrate statistical rigor using <strong>probability</strong>, <strong>Bayesian inference</strong>, and <strong>linear algebra</strong>, ensuring accurate and reliable models. For deployment and monitoring, I create <strong>interactive dashboards</strong> with <strong>Power BI</strong> and establish deployment pipelines, enabling real-time predictions and actionable insights. This end-to-end workflow ensures the delivery of high-quality, impactful data-driven solutions.
+        </p>
+      </div>
+    </section>
+
+
+    
+    <section class="fullstack-developer">
+      <h1>FULL STACK DEVELOPER</h1>
+      <div class="icons">
+          <img src="assets/html5.png" alt="HTML 5">
+          <img src="assets/css3.png" alt="CSS 3">
+          <img src="assets/javascript.png" alt="JavaScript">
+          <img src="assets/react.png" alt="React">
+          <img src="assets/nodejs.png" alt="Node.js">
+          <img src="assets/php.png" alt="PHP">
+      </div>
+      <div class="skills">
+          <p>HTML 5</p>
+          <p>CSS 3</p>
+          <p>JAVA SCRIPT</p>
+          <p>REACT</p>
+          <p>ANGULAR</p>
+          <p>VUE.JS</p>
+          <p>NODE.JS</p>
+          <p>DJANGO</p>
+          <p>MANGO DB</p>
+          <p>SPTING BOOT</p>
+          <p>PHP</p>
+      </div>
+      
+      <div class="description">
+          <p>I specialize in creating dynamic web applications using front-end frameworks like React, Angular, and Vue.js, paired with scalable back-end technologies such as Node.js, .NET, Django, and Java Spring Boot. I design and deploy RESTful and GraphQL APIs for seamless data exchange and manage databases using MySQL, PostgreSQL, and MongoDB. To enhance front-end performance, I implement tools like Redux and Vuex alongside responsive and interactive design principles.</p>
+          <p>To ensure optimal application performance, I employ caching mechanisms like Redis and Memcached, integrate logging and monitoring tools such as Prometheus, Grafana, and Datadog, and utilize containerization with Docker and Kubernetes for scalable deployments. My expertise extends to cloud platforms, including AWS, GCP, and Azure, where I leverage serverless architectures and CI/CD pipelines using Jenkins, GitHub Actions, or CircleCI to streamline development, testing, and deployment processes. I also implement robust authentication systems with OAuth2.0, JWT, and Passport.js to enhance application security and user trust.</p>
+          <p>Beyond development, I focus on delivering exceptional user experiences by employing UX/UI design tools like Figma and Adobe XD and adhering to accessibility and SEO best practices. By integrating third-party APIs, WebSockets, and Socket.IO, I enable real-time functionalities such as live chats and notifications. Additionally, I design Progressive Web Applications (PWAs) to deliver offline capabilities and mobile-first designs. With a strong emphasis on collaboration and version control using Git, GitHub, and GitLab, I ensure that all projects are maintainable, scalable, and optimized for performance in real-world scenarios.</p>
+      </div>
+    </section>
+
+
+    <section class="cloud">
+      <h1>CLOUD AND INFRASTRUCTURE</h1>
+    
+      <!-- Logos Section -->
+      <div class="logos">
+        <img src="assets/postgresql.png" alt="PostgreSQL Logo" title="PostgreSQL">
+        <img src="assets/aws.png" alt="AWS Logo" title="AWS">
+        <img src="assets/gcp.png" alt="GCP Logo" title="Google Cloud Platform">
+        <img src="assets/azure.png" alt="Azure Logo" title="Microsoft Azure">
+        <img src="assets/docker.png" alt="Docker Logo" title="Docker">
+        <img src="assets/firebase.png" alt="Firebase Logo" title="Firebase">
+        <img src="assets/kubernates.png" alt="Kubernetes Logo" title="Kubernetes">
+      </div>
+    
+      <!-- Categories Section -->
+      <div class="categories">
+        <span title="Infrastructure as a Service">IAAS</span>
+        <span title="Platform as a Service">PAAS</span>
+        <span title="Software as a Service">SAAS</span>
+        <span>Virtual Machines</span>
+        <span>VMware</span>
+        <span>Kubernetes</span>
+        <span>Docker</span>
+      </div>
+    
+      <!-- Description Section -->
+      <div class="description">
+        <p>
+          I specialize in <strong>cloud and infrastructure management</strong>, focusing on designing scalable, reliable, and cost-effective systems. I analyze requirements to choose the best cloud architecture and use tools like <strong>Terraform</strong> and <strong>AWS CloudFormation</strong> to automate resource provisioning with Infrastructure as Code (IaC).
+        </p>
+        <p>
+          Using <strong>Docker</strong> for containerization and <strong>Kubernetes</strong> for orchestration, I efficiently manage deployments, scaling, and service availability. I configure resources on platforms like <strong>AWS</strong>, <strong>Azure</strong>, and <strong>Google Cloud</strong>, including virtual machines, storage, and managed databases.
+        </p>
+        <p>
+          Post-deployment, I implement <strong>monitoring and logging systems</strong> with tools like <strong>Prometheus</strong>, <strong>Grafana</strong>, and the <strong>ELK Stack</strong> to track performance and detect issues. I secure environments with <strong>IAM policies</strong>, <strong>encryption</strong>, and <strong>firewalls</strong>, ensuring compliance and best practices. Additionally, I integrate <strong>CI/CD pipelines</strong> to streamline updates and use <strong>auto-scaling</strong> and <strong>load balancers</strong> for traffic management, ensuring systems remain robust and adaptive.
+        </p>
+      </div>
+    </section>
+
+
+    <section class="editors">
+      <h1>EDITORS AND SOFTWARE</h1>
+      <div class="icons">
+          <img src="assets/visual-studio.png" alt="HTML 5">
+          <img src="assets/sublime.png" alt="CSS 3">
+          <img src="assets/atom.png" alt="JavaScript">
+          <img src="assets/notepad.png" alt="React">
+          <img src="assets/inteli.png" alt="Node.js">
+          <img src="assets/PYCHARM.png" alt="PHP">
+          <img src="assets/ellipse.png" alt="HTML 5">
+          <img src="assets/netbeans.png" alt="CSS 3">
+          <img src="assets/webstrom.png" alt="JavaScript">
+          <img src="assets/android.jpg" alt="React">
+          <img src="assets/colab.png" alt="Node.js">
+          <img src="assets/codepen.webp" alt="PHP">
+          <img src="assets/matlab.gif" alt="PHP">
+      </div>
+      <div class="skills-cloud">
+        <span>Visual Studio Code (VS Code)</span>
+        <span>Sublime Text</span>
+        <span>Atom</span>
+        <span>Notepad++</span>
+        <span>IntelliJ IDEA</span>
+        <span>PyCharm</span>
+        <span>Eclipse</span>
+        <span>Visual Studio</span>
+        <span>NetBeans</span>
+        <span>WebStorm</span>
+        <span>Android Studio</span>
+        <span>GitHub Codespaces</span>
+        <span>AWS Cloud9</span>
+        <span>Google Colab</span>
+        <span>GitHub Desktop</span>
+        <span>Jupyter Notebook</span>
+        <span>Google Colab</span>
+        <span>MATLAB</span>
+        <span>CodePen</span>
+        <span>Bootstrap Studio</span>
+        
+      </div>
+      <div class="description">
+        <p>
+          I use PyCharm, IntelliJ IDEA, and Eclipse for Python and Java projects, seamlessly integrating with frameworks like Django and Spring Boot. For C# and .NET work, I rely on Visual Studio, while VS Code, Sublime Text, Atom, and Notepad++ support quick edits and scripting tasks. Tools like WebStorm, CodePen, and Bootstrap Studio streamline responsive front-end development, and Android Studio is essential for creating mobile applications in Kotlin and Java.
+        </p>
+        <p>
+          For machine learning and AI tasks, I work with Google Colab, Jupyter Notebook, and MATLAB to train models, analyze data, and experiment with deep learning algorithms. These tools enable complex computations and support my research and development in data science.
+        </p>
+        <p>
+          I manage version control with Git and use GitHub Desktop for branch management and synchronization. GitHub Codespaces allows me to collaborate effectively in cloud environments. For deployment, I rely on AWS Cloud9 to ensure scalable, secure, and efficient cloud-native application hosting.
+        </p>
+      </div>
+
+    
+    
+    
+  </body>
+</html>
+

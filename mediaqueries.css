@@ -1,0 +1,91 @@
+/* Medium Screens (1200px and below) */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none; /* Hide desktop nav */
+  }
+
+  #hamburger-nav {
+    display: flex; /* Show hamburger nav */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+}
+
+/* Small Screens (600px and below) */
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .menu-links {
+    width: 100%; /* Full width menu on small screens */
+  }
+
+  .menu-links a {
+    font-size: 1.2rem; /* Smaller font for menu links */
+  }
+
+  .hamburger-icon {
+    width: 25px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: 1rem; /* Compact gap */
+  }
+
+  .check-icon {
+    width: 30px; /* Smaller icon for mobile */
+    height: 30px;
+  }
+
+  .skill p {
+    font-size: 1rem; /* Smaller skill name text size for mobile */
+  }
+
+  .skill span {
+    font-size: 0.9rem; /* Smaller proficiency level text size */
+  }
+}
+@media screen and (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+    gap: 1rem; /* Compact gap */
+  }
+
+  .check-icon {
+    width: 30px; /* Smaller icon for mobile */
+    height: 30px;
+  }
+
+  .skill p {
+    font-size: 1rem; /* Smaller skill name text size for mobile */
+  }
+
+  .skill span {
+    font-size: 0.9rem; /* Smaller proficiency level text size */
+  }
+}
+@media (max-width: 768px) {
+  .editors h1 {
+    font-size: 1.5em; /* Further reduce heading size */
+  }
+
+  .icons img {
+    width: 40px; /* Smaller icons for very small screens */
+    height: 40px;
+  }
+
+  .skills-cloud span {
+    font-size: 0.8rem; /* Smaller tags for mobile */
+    padding: 0.3rem 0.6rem; /* Compact spacing */
+  }
+
+  .description {
+    font-size: 0.85rem; /* Slightly smaller text for mobile readability */
+    line-height: 1.5; /* Adjust line height for smaller screens */
+  }
+}

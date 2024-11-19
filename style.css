@@ -1,0 +1,817 @@
+/* GENERAL STYLES */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  BORDER: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR */
+nav {
+  display: flex; /* Ensure desktop nav is visible on larger screens */
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0 1rem;
+  background-color: #d3d3d3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem; /* Spacing between nav items */
+  font-size: 1.5rem;
+  margin: 0; /* Reset any left/right margins */
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+/* LOGO STYLING */
+.logo {
+  font-family: "Great Vibes", cursive; /* Handwritten font */
+  font-size: 3rem; /* Adjusted for prominence */
+  font-weight: 400;
+  color: rgb(0, 0, 0); /* Elegant gray */
+  margin: 0;
+}
+
+/* General Reset */
+
+/* Hamburger Navigation */
+#hamburger-nav {
+  display: none; /* Hide hamburger menu by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: #d3d3d3;
+  z-index: 1000;
+}
+
+/* Hamburger Icon Styling */
+.hamburger-menu {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.hamburger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+}
+
+.hamburger-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+}
+
+
+.menu-links {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  list-style: none;
+  list-style: none;
+  padding: 1REM;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.menu-links.open {
+  display: block; /* Show menu when open */
+}
+
+.menu-links li {
+  margin: 0.5rem 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover {
+  color: grey;
+}
+
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* Medium Screens (1200px and below) */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none; /* Hide desktop nav */
+  }
+
+  #hamburger-nav {
+    display: flex; /* Show hamburger nav */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .menu-links {
+    width: 100%; /* Full width menu on small screens */
+  }
+}
+
+/* Small Screens (600px and below) */
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: 2.5rem; /* Slightly smaller logo */
+  }
+
+  .menu-links a {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .hamburger-icon {
+    width: 25px;
+    height: 20px;
+  }
+}
+
+/* HOME */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.section__pic-container {
+  margin-top: 30px; /* Push the picture slightly downward */
+}
+
+.section__pic-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.section__text {
+  margin-top: 0;
+}
+
+.title {
+  font-size: 2rem; /* Slightly smaller for better alignment */
+  font-weight: bold;
+  margin-top: 15px; /* Small gap between picture and name */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Small gap between name and resume button */
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0.8rem 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn-color-2 {
+  background: transparent;
+  color: #000;
+}
+
+.btn-color-2:hover {
+  background: #333;
+  color: #fff;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 15px;
+}
+
+.icon {
+  cursor: pointer;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.section__text__p1 {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  text-align: center;
+  margin-top: 20px; /* Space between social icons and paragraph */
+  margin-bottom: 0; /* No gap after the paragraph */
+}
+
+
+/* education  */
+
+#education {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.education-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 1100px;
+  width: 100%;
+  gap: 1.5rem;
+  background-color: #fff; /* Ensure a background color for the shadow to show */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Add shadow */
+  transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.education-logo {
+  width: 80px;
+  height: auto;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-details h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.education-period {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666;
+}
+
+.education-degree {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.education-description {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  text-align: left; /* Align the text to the left */
+}
+
+.education-description li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem; /* Add space for the star symbol */
+}
+
+.education-description li:before {
+  content: '✯'; /* Use the star symbol */
+  position: absolute;
+  left: 0; /* Position the star at the far left */
+  color: #f39c12; /* Set the color of the star */
+  font-size: 1.2rem; /* Adjust star size */
+}
+
+
+
+
+
+#skills {
+  text-align: center;
+  padding: 3rem; /* Increased padding */
+  }
+  
+  .skills-title {
+  font-size: 3rem; /* Larger title size */
+  font-weight: bold;
+  margin-bottom: 3rem; /* More space below the title */
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+    grid-auto-rows: minmax(150px, auto); /* Maintain row height */
+    gap: 1.5rem; /* Spacing between rows and columns */
+    justify-items: center; /* Center items in each grid cell */
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem; /* Space between icon and text */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for zoom effect */
+  }
+  
+  .skill:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow on hover */
+  }
+  
+  .check-icon {
+    width: 40px; /* Icon size */
+    height: 40px;
+    transition: transform 0.3s ease; /* Smooth transition for icon */
+  }
+  
+  .skill:hover .check-icon {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+  }
+  
+  .skill p {
+    font-size: 1.5rem; /* Skill name text size */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .skill span {
+    font-size: 1.2rem; /* Proficiency level text size */
+    color: #555;
+    margin: 0;
+  }
+  
+  /* MEDIA QUERIES FOR RESPONSIVENESS */
+  
+  /* Medium Screens (Tablets) */
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+      gap: 1rem; /* Smaller gap */
+    }
+  
+    .check-icon {
+      width: 35px; /* Smaller icon for compact layout */
+      height: 35px;
+    }
+  
+    .skill p {
+      font-size: 1.25rem; /* Smaller skill name text size */
+    }
+  
+    .skill span {
+      font-size: 1rem; /* Smaller proficiency level text size */
+    }
+  }
+  
+/*data science*/
+
+#data-science {
+  padding: 10px; /* Adjust padding for smaller screens */
+  max-width: 100%; /* Full width for mobile */
+  margin: 0 auto; /* Center align for mobile */
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000; /* Darker title color */
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Skills Cloud Styling */
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items onto the next row */
+  gap: 1rem; /* Space between items */
+  justify-content: center; /* Center align items */
+}
+
+.skills-cloud span {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000000; /* Darker text color */
+  background-color: #ffffff; /* Ensure white background for tags */
+  padding: 0.5rem 1rem;
+  border: 2px solid #777; /* Neutral border */
+  border-radius: 8px; /* Rounded corners for modern design */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Hover Effect */
+.skills-cloud span:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  border-color: #555; /* Darker border on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Description Styling */
+.description {
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: justify; /* Justify text for better readability */
+  color: #000000;
+  line-height: 1.8; /* Better line spacing */
+  width: 95%; /* Make the description occupy almost the full width of the page */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; /* Remove any padding */
+  border: none; /* Remove any border */
+}
+
+.description {
+  text-align: justify;
+  line-height: 1.6; /* Adjust line height for readability */
+  font-size: 0.9rem; /* Reduce font size for mobile readability */
+  width: 90%; /* Reduce width for smaller screens */
+  margin: 10px auto; /* Add spacing above and below */
+}
+
+.description p {
+  margin-bottom: 0.8rem; /* Adjust spacing between paragraphs */
+}
+
+
+
+/* full stack */
+
+/* General Reset */
+body, h1, p, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full Stack Developer Section */
+.fullstack-developer {
+  padding: 10px; /* Adjust padding for smaller screens */
+  max-width: 100%; /* Full width for mobile */
+  margin: 0 auto; /* Center align for mobile */
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Section Title */
+.fullstack-developer h1 {
+  font-size: 1.8em; /* Smaller font size for mobile */
+  margin-bottom: 15px;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  flex-wrap: wrap; /* Allow icons to wrap onto the next line */
+  justify-content: center;
+  gap: 15px; /* Adjust spacing for smaller screens */
+  margin-bottom: 15px;
+}
+
+.icons img {
+  width: 50px; /* Adjust size for smaller devices */
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  gap: 0.5rem; /* Reduce gap for compact layout */
+  justify-content: center; /* Center align items */
+  margin-bottom: 20px;
+}
+
+.skills p {
+  font-size: 0.9rem; /* Reduce font size for mobile */
+  padding: 0.4rem 0.8rem; /* Adjust padding for compactness */
+  background-color: #e0e0e0;
+  color: #000; /* Black text for better contrast */
+  border: 1px solid transparent; /* Default transparent border */
+  border-radius: 5px; /* Slightly less rounded corners */
+  transition: all 0.3s ease;
+}
+
+.skills p:hover {
+  border: 1px solid #333; /* Darker border on hover */
+  background-color: #d6d6d6; /* Slightly darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Description Section */
+.description {
+  text-align: justify;
+  line-height: 1.6; /* Adjust line height for readability */
+  font-size: 0.9rem; /* Reduce font size for mobile readability */
+  width: 90%; /* Reduce width for smaller screens */
+  margin: 10px auto; /* Add spacing above and below */
+}
+
+.description p {
+  margin-bottom: 0.8rem; /* Adjust spacing between paragraphs */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .fullstack-developer h1 {
+    font-size: 1.5em; /* Further reduce heading size */
+  }
+
+  .icons img {
+    width: 40px; /* Smaller icons for very small screens */
+    height: 40px;
+  }
+
+  .skills p {
+    font-size: 0.8rem; /* Smaller tags for mobile */
+    padding: 0.3rem 0.6rem; /* Compact spacing */
+  }
+
+  .description {
+    font-size: 0.85rem; /* Slightly smaller text for mobile readability */
+    line-height: 1.5; /* Adjust line height for smaller screens */
+  }
+}
+
+
+/* cloud */
+/* General Reset */
+body, h1, p, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Section Container */
+.cloud {
+  padding: 10px; /* Adjust padding for smaller screens */
+  max-width: 100%; /* Full width for mobile */
+  margin: 0 auto; /* Center align for mobile */
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Section Title */
+.cloud h1 {
+  font-size: 1.8em; /* Smaller font size for mobile */
+  margin-bottom: 15px;
+}
+
+/* Logos Section */
+.cloud .logos {
+  display: flex;
+  flex-wrap: wrap; /* Allow logos to wrap onto the next line */
+  justify-content: center;
+  gap: 15px; /* Adjust spacing for smaller screens */
+  margin: 15px 0;
+}
+
+.cloud .logos img {
+  width: 50px; /* Adjust size for smaller devices */
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cloud .logos img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+}
+
+/* Categories Section */
+.cloud .categories {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  gap: 0.5rem; /* Reduce gap for compact layout */
+  justify-content: center; /* Center align items */
+  margin: 20px 0;
+}
+
+.cloud .categories span {
+  font-size: 0.9rem; /* Reduce font size for mobile */
+  padding: 0.4rem 0.8rem; /* Adjust padding for compactness */
+  background-color: #f0f0f0;
+  border: 1px solid #777; /* Slightly lighter border */
+  border-radius: 5px; /* Slightly less rounded corners */
+  text-transform: uppercase; /* Make text uppercase */
+  transition: all 0.3s ease;
+}
+
+.cloud .categories span:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  border-color: #555; /* Darker border on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Description Section */
+.cloud .description {
+  text-align: justify;
+  line-height: 1.6; /* Adjust line height for readability */
+  font-size: 0.9rem; /* Reduce font size for mobile readability */
+  width: 90%; /* Reduce width for smaller screens */
+  margin: 10px auto; /* Add spacing above and below */
+}
+
+.cloud .description p {
+  margin-bottom: 0.8rem; /* Adjust spacing between paragraphs */
+}
+
+.cloud .description strong {
+  color: #000; /* Make strong text bold and black */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .cloud h1 {
+    font-size: 1.5em; /* Further reduce heading size */
+  }
+
+  .cloud .logos img {
+    width: 40px; /* Smaller logos for very small screens */
+    height: auto;
+  }
+
+  .cloud .categories span {
+    font-size: 0.8rem; /* Smaller tags for mobile */
+    padding: 0.3rem 0.6rem; /* Compact spacing */
+  }
+
+  .cloud .description {
+    font-size: 0.85rem; /* Slightly smaller text for mobile readability */
+    line-height: 1.5; /* Adjust line height for smaller screens */
+  }
+}
+
+/*editors*/
+
+
+/* General Reset */
+body, h1, p, span {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Editors Section */
+.editors {
+  padding: 10px; /* Adjust padding for smaller screens */
+  max-width: 100%; /* Full width for mobile */
+  margin: 0 auto; /* Center align for mobile */
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Section Title */
+.editors h1 {
+  font-size: 1.8em; /* Smaller font size for mobile */
+  margin-bottom: 15px;
+}
+
+/* Icons Section */
+.icons {
+  display: flex;
+  flex-wrap: wrap; /* Allow icons to wrap onto the next line */
+  justify-content: center;
+  gap: 15px; /* Adjust spacing for smaller screens */
+  margin-bottom: 15px;
+}
+
+.icons img {
+  width: 50px; /* Adjust size for smaller devices */
+  height: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icons img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+}
+
+/* Skills Cloud Section */
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  gap: 0.5rem; /* Reduce gap for compact layout */
+  justify-content: center; /* Center align items */
+}
+
+.skills-cloud span {
+  font-size: 0.9rem; /* Reduce font size for mobile */
+  padding: 0.4rem 0.8rem; /* Adjust padding for compactness */
+  border: 1px solid #777; /* Slightly lighter border */
+  border-radius: 5px; /* Slightly less rounded corners */
+  transition: all 0.3s ease;
+}
+
+.skills-cloud span:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  border-color: #555; /* Darker border on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Description Section */
+.description {
+  margin-top: 1rem; /* Reduce top margin for compactness */
+  font-size: 0.9rem; /* Reduce font size for mobile readability */
+  text-align: justify;
+  color: #000000;
+  line-height: 1.6; /* Adjust line height for readability */
+  width: 90%; /* Reduce width for smaller screens */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0; /* Remove padding */
+}
+
+.description p {
+  margin-bottom: 0.8rem; /* Adjust spacing between paragraphs */
+}
+
+.description strong {
+  color: #000; /* Keep strong text bold */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .editors h1 {
+    font-size: 1.5em; /* Further reduce heading size */
+  }
+
+  .icons img {
+    width: 40px; /* Smaller icons for very small screens */
+    height: 40px;
+  }
+
+  .skills-cloud span {
+    font-size: 0.8rem; /* Smaller tags for mobile */
+    padding: 0.3rem 0.6rem; /* Compact spacing */
+  }
+
+  .description {
+    font-size: 0.85rem; /* Slightly smaller text for mobile readability */
+    line-height: 1.5; /* Adjust line height for smaller screens */
+  }
+}
